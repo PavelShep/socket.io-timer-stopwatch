@@ -8,6 +8,8 @@ pip install flask flask-socketio
 
 python server.py
 
+./start.sh
+
 git bash
 
 * Running on http://127.0.0.1:5000 - ноутбук (localhost:5000)

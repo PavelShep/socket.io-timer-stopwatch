@@ -40,16 +40,19 @@ def index():
 
 # Start timer
 @socketio.on('start_timer')
-def start_timer(data):
+def start_timer(data=None):
     global timer_time, timer_running
 
     # Check if the timer is already running (it can't be started more than once)
     if timer_running:
         return
 
-    timer_time = data['hours'] * 3600 + data['minutes'] * 60 + data['seconds']
-    timer_running = True
+    # Start from OR Resume timer functional 
+    if data:
+        timer_time = data['hours'] * 3600 + data['minutes'] * 60 + data['seconds']
+    
     emit('update_timer', {'time': format_time(timer_time)}, broadcast=True)
+    timer_running = True
     while timer_running and timer_time > 0:
         time.sleep(1)
         if timer_running:
@@ -86,8 +89,8 @@ def start_stopwatch():
         return  
 
     stopwatch_running = True
-    while stopwatch_running:
 
+    while stopwatch_running:
         time.sleep(1)
         if stopwatch_running:
             stopwatch_time += 1

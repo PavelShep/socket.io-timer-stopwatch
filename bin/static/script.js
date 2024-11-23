@@ -1,7 +1,10 @@
 const socket = io();
 
+let btnStartClick = 0;
+
 // Timer Functions
 function startTimer() {
+    
     const hours = parseInt(document.getElementById('hours').value);
     const minutes = parseInt(document.getElementById('minutes').value);
     const seconds = parseInt(document.getElementById('seconds').value);
@@ -11,7 +14,14 @@ function startTimer() {
         return; 
     }
 
-    socket.emit('start_timer', { hours, minutes, seconds });
+    // Start from OR Resume timer functional  
+    if (btnStartClick == 0) {        
+        btnStartClick++;
+        socket.emit('start_timer', { hours, minutes, seconds });
+    } else {
+        socket.emit('start_timer', {});
+    }
+   
 }
 
 function stopTimer() {
@@ -19,6 +29,7 @@ function stopTimer() {
 }
 
 function resetTimer() {
+    btnStartClick = 0;
     socket.emit('reset_timer');
 }
 
