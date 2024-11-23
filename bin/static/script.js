@@ -5,6 +5,12 @@ function startTimer() {
     const hours = parseInt(document.getElementById('hours').value);
     const minutes = parseInt(document.getElementById('minutes').value);
     const seconds = parseInt(document.getElementById('seconds').value);
+
+    if (hours === 0 && minutes === 0 && seconds === 0) {
+        showModal('Czas nie może wynosić 0');
+        return; 
+    }
+
     socket.emit('start_timer', { hours, minutes, seconds });
 }
 
