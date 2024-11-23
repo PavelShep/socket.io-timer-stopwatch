@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer i Stoper</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timer i Stoper</h1>
+
+        <!-- Timer Section -->
+        <div class="timer-container">
+            <h2>Timer</h2>
+            <div style="text-align: center;">
+                <!-- Input fields for timer hours, minutes, and seconds -->
+                <label for="hours">Godziny:</label>
+                <input type="number" id="hours" min="0" value="0">
+                <label for="minutes">Minuty:</label>
+                <input type="number" id="minutes" min="0" value="0">
+                <label for="seconds">Sekundy:</label>
+                <input type="number" id="seconds" min="0" value="0">
+            </div>
+            <div style="text-align: center;">
+                <!-- Timer control buttons -->
+                <button onclick="startTimer()">Startuj</button>
+                <button onclick="stopTimer()">Zatrzymaj</button>
+                <button class="reset-button" onclick="resetTimer()">Zresetuj</button>
+            </div>
+            <!-- Timer display -->
+            <p class="display-time" id="timerDisplay">00:00:00</p>
+        </div>
+
+        <!-- Stopwatch Section -->
+        <div class="stopwatch-container">
+            <h2>Stoper</h2>
+            <div style="text-align: center;">
+                <!-- Stopwatch control buttons -->
+                <button onclick="startStopwatch()">Startuj</button>
+                <button onclick="stopStopwatch()">Zatrzymaj</button>
+                <button class="reset-button" onclick="resetStopwatch()">Zresetuj</button>
+            </div>
+            <!-- Stopwatch display -->
+            <p class="display-time" id="stopwatchDisplay">00:00:00</p>
+        </div>
+    </div>
+
+    <!-- Modal Window -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <!-- Close button for the modal -->
+            <span class="close">&times;</span>
+            <p id="modalMessage">Timer zakończony!</p>
+        </div>
+    </div>
+
+    <!-- Socket.IO library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <!-- Link to external JavaScript file -->
+    <script src="../static/script.js"></script>
+</body>
+</html>
