@@ -121,3 +121,29 @@ h2 {
     font-size: 18px;
     color: #333;
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .display-time {
+        font-size: 60px;
+    }
+
+    .timer-container input, .stopwatch-container input {
+        width: 50px;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .timer-container button, .stopwatch-container button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
