@@ -18,7 +18,7 @@ if ! ps -p $SERVER_PID > /dev/null; then
 fi
 
 # Extract the IPv4 address from the block
-IP_ADDRESS=$(ipconfig | awk '/Wireless LAN adapter Wi-Fi:/,/Default Gateway:/' | grep -E "IPv4 Address" | awk -F: '{print $2}' | tr -d '\r\n ')
+IP_ADDRESS=$(ipconfig | awk '/Wireless LAN adapter Wi-Fi:/ {n=5} n > 0 {print; n--}' | grep -E "IPv4 Address" | awk -F: '{print $2}' | tr -d '\r\n ' | head -n 1)
 
 # Check if the IP address was found
 if [ -z "$IP_ADDRESS" ]; then
