@@ -1,14 +1,40 @@
-2024-11-23 18:11:54,152 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-11-27 12:36:42,684 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.27:5000
-2024-11-23 18:11:54,152 - INFO - [33mPress CTRL+C to quit[0m
-2024-11-23 18:11:57,925 - INFO - 127.0.0.1 - - [23/Nov/2024 18:11:57] "GET / HTTP/1.1" 200 -
-2024-11-23 18:11:58,227 - INFO - 127.0.0.1 - - [23/Nov/2024 18:11:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2024-11-23 18:11:58,247 - INFO - 127.0.0.1 - - [23/Nov/2024 18:11:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
-2024-11-23 18:11:58,547 - INFO - 127.0.0.1 - - [23/Nov/2024 18:11:58] "GET /socket.io/?EIO=4&transport=polling&t=PDQ0aLN HTTP/1.1" 200 -
-2024-11-23 18:11:58,888 - INFO - 127.0.0.1 - - [23/Nov/2024 18:11:58] "POST /socket.io/?EIO=4&transport=polling&t=PDQ0aLk&sid=msb60hENUqAqQAPeAAAA HTTP/1.1" 200 -
-2024-11-23 18:11:58,888 - INFO - 127.0.0.1 - - [23/Nov/2024 18:11:58] "GET /socket.io/?EIO=4&transport=polling&t=PDQ0aLm&sid=msb60hENUqAqQAPeAAAA HTTP/1.1" 200 -
-2024-11-23 18:11:59,059 - INFO - 127.0.0.1 - - [23/Nov/2024 18:11:59] "GET /socket.io/?EIO=4&transport=polling&t=PDQ0aQk&sid=msb60hENUqAqQAPeAAAA HTTP/1.1" 200 -
-2024-11-23 18:11:59,139 - INFO - 127.0.0.1 - - [23/Nov/2024 18:11:59] "[35m[1mGET /static/timer_sound.mp3 HTTP/1.1[0m" 206 -
-2024-11-23 18:11:59,199 - INFO - 127.0.0.1 - - [23/Nov/2024 18:11:59] "GET /socket.io/?EIO=4&transport=polling&t=PDQ0aVV&sid=msb60hENUqAqQAPeAAAA HTTP/1.1" 200 -
+ * Running on http://192.168.56.2:5000
+2024-11-27 12:36:42,684 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-27 12:36:48,338 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:48] "GET /socket.io/?EIO=4&transport=polling&t=PDjQDYS HTTP/1.1" 200 -
+2024-11-27 12:36:48,601 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:48] "POST /socket.io/?EIO=4&transport=polling&t=PDjQDdP&sid=G7CQzGZTigiik3jPAAAA HTTP/1.1" 200 -
+2024-11-27 12:36:48,655 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:48] "GET /socket.io/?EIO=4&transport=polling&t=PDjQDdQ&sid=G7CQzGZTigiik3jPAAAA HTTP/1.1" 200 -
+2024-11-27 12:36:48,655 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:48] "GET /socket.io/?EIO=4&transport=polling&t=PDjQDiL&sid=G7CQzGZTigiik3jPAAAA HTTP/1.1" 200 -
+2024-11-27 12:36:53,390 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:53] "GET /socket.io/?EIO=4&transport=websocket&sid=G7CQzGZTigiik3jPAAAA HTTP/1.1" 200 -
+2024-11-27 12:36:53,703 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:53] "GET / HTTP/1.1" 200 -
+2024-11-27 12:36:53,799 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-27 12:36:53,960 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:53] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2024-11-27 12:36:54,442 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:54] "GET /socket.io/?EIO=4&transport=polling&t=PDjQF1- HTTP/1.1" 200 -
+2024-11-27 12:36:54,442 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:54] "[35m[1mGET /static/timer_sound.mp3 HTTP/1.1[0m" 206 -
+2024-11-27 12:36:54,703 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:54] "POST /socket.io/?EIO=4&transport=polling&t=PDjQF6m&sid=Z6N3nkH3a-nB2HzfAAAC HTTP/1.1" 200 -
+2024-11-27 12:36:54,762 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:54] "GET /socket.io/?EIO=4&transport=polling&t=PDjQF6o&sid=Z6N3nkH3a-nB2HzfAAAC HTTP/1.1" 200 -
+2024-11-27 12:36:54,771 - INFO - 127.0.0.1 - - [27/Nov/2024 12:36:54] "GET /socket.io/?EIO=4&transport=polling&t=PDjQFBm&sid=Z6N3nkH3a-nB2HzfAAAC HTTP/1.1" 200 -
+2024-11-27 12:37:13,126 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:13] "GET / HTTP/1.1" 200 -
+2024-11-27 12:37:13,236 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:13] "GET /static/style.css HTTP/1.1" 200 -
+2024-11-27 12:37:13,246 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:13] "GET /static/script.js HTTP/1.1" 200 -
+2024-11-27 12:37:13,366 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:13] "[35m[1mGET /static/timer_sound.mp3 HTTP/1.1[0m" 206 -
+2024-11-27 12:37:13,586 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:13] "GET /socket.io/?EIO=4&transport=polling&t=PDjQIyW HTTP/1.1" 200 -
+2024-11-27 12:37:13,636 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:13] "POST /socket.io/?EIO=4&transport=polling&t=PDjQIz9&sid=8ym2bj-2eMgqkLAUAAAE HTTP/1.1" 200 -
+2024-11-27 12:37:13,636 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:13] "GET /socket.io/?EIO=4&transport=polling&t=PDjQIzI&sid=8ym2bj-2eMgqkLAUAAAE HTTP/1.1" 200 -
+2024-11-27 12:37:13,646 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-27 12:37:13,666 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:13] "GET /socket.io/?EIO=4&transport=polling&t=PDjQIzj&sid=8ym2bj-2eMgqkLAUAAAE HTTP/1.1" 200 -
+2024-11-27 12:37:14,831 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:14] "GET /socket.io/?EIO=4&transport=websocket&sid=8ym2bj-2eMgqkLAUAAAE HTTP/1.1" 200 -
+2024-11-27 12:37:14,834 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:14] "GET / HTTP/1.1" 200 -
+2024-11-27 12:37:14,860 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-27 12:37:14,860 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:14] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2024-11-27 12:37:14,880 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:14] "GET /socket.io/?EIO=4&transport=polling&t=PDjQJGq HTTP/1.1" 200 -
+2024-11-27 12:37:14,900 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:14] "POST /socket.io/?EIO=4&transport=polling&t=PDjQJG-&sid=eiAU6vvm7cbLZOwOAAAG HTTP/1.1" 200 -
+2024-11-27 12:37:14,900 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:14] "GET /socket.io/?EIO=4&transport=polling&t=PDjQJG_&sid=eiAU6vvm7cbLZOwOAAAG HTTP/1.1" 200 -
+2024-11-27 12:37:14,910 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:14] "GET /socket.io/?EIO=4&transport=polling&t=PDjQJHD&sid=eiAU6vvm7cbLZOwOAAAG HTTP/1.1" 200 -
+2024-11-27 12:37:45,773 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:45] "[35m[1mGET /static/timer_sound.mp3 HTTP/1.1[0m" 206 -
+2024-11-27 12:37:45,779 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:45] "[35m[1mGET /static/timer_sound.mp3 HTTP/1.1[0m" 206 -
+2024-11-27 12:37:46,059 - INFO - 127.0.0.1 - - [27/Nov/2024 12:37:46] "[35m[1mGET /static/timer_sound.mp3 HTTP/1.1[0m" 206 -
+2024-11-27 12:37:50,502 - INFO - 192.168.56.169 - - [27/Nov/2024 12:37:50] "[35m[1mGET /static/timer_sound.mp3 HTTP/1.1[0m" 206 -
+2024-11-27 12:38:01,843 - INFO - 192.168.56.169 - - [27/Nov/2024 12:38:01] "[35m[1mGET /static/timer_sound.mp3 HTTP/1.1[0m" 206 -
